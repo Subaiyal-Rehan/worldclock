@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-expand-lg {
+    width: 100%;
+}
+
+.container-fluid img {
+    cursor: pointer;
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin-top: 86px;
+    background-color: #212529;
+    padding: 58px 45px;
+}
+
+.container h1 {
+    color: white;
+}
+
+.container p,
+.container hr {
+    color: #abadaf;
+    margin: 25px 0;
+}
+
+.container button {
+    padding: 8px 17px;
+    background-color: transparent;
+    color: #1c754d;
+    border: 2px solid #1c754d;
+    border-radius: 5px;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.container button:hover {
+    border: 2px solid #1c754d;
+    background-color: #1c754d;
+    color: white;
+}
+
+.card-body {
+    background-color: #343a40;
+    color: #c8c9cb;
+}
+
+#collapseContent {
+    display: none;
+}
+
+#collapseContent span {
+    font-size: 21px;
+    color: #d0d0d0;
+}
+
+#collapseContent p {
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: #212529;
+    padding: 8px 0;
+    width: 100vw;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 5px;
+    background-color: #2b3035;
+    display: flex;
+    justify-content: center;
+    color: #abadaf;
+    align-items: center;
+    font-size: 15px;
+}
