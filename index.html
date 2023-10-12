@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,7 +31,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li><a class="nav-link" href="#">Contact Us</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">Dropdown</a>
@@ -45,22 +46,20 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="sectionContainer">
+    <section id="MainTime" class="sectionContainer">
         <div class="container">
             <h1>Current Time Is: <span id="time"></span></h1>
-            <p>Discover the heartbeat of the world through time. Explore global cities and their local times, all in one place.</p>
+            <p>Discover the heartbeat of the world through time. Explore global cities and their local times, all in one
+                place.</p>
             <hr>
-            <p>We have times of different cities including: New York, London, Dubai, Paris, Mumbai, Karachi, Tokyo, Mexico, Chicago, Hong Kong, Riyadh and Moscow yet!</p>
+            <p>We have times of different cities including: New York, London, Dubai, Paris, Mumbai, Karachi, Tokyo,
+                Mexico, Chicago, Hong Kong, Riyadh and Moscow yet!</p>
             <p class="d-inline-flex gap-1">
                 <button onclick="clicked()" class="btn btn-primary" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Browse
@@ -105,6 +104,56 @@
             </div>
         </div>
     </section>
+
+    <div class="container-fluid bg-dark-subtle my-5 px-4 py-5" id="hanging-icons">
+        <h2 style="border-bottom: 1px solid rgb(160, 160, 160);" class="pb-2">We Provide:</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Live Time</h3>
+                    <p>Experience the world's wonders, from the bustling streets of New York to the serene landscapes of
+                        Tokyo, all in real-time, with our live clock showcasing global moments.</p>
+                    <a href="#MainTime" class="btn btn-warning">Check Time</a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Live Date</h3>
+                    <p>Stay connected to the world in real time, with up-to-the-minute dates from global cities.</p>
+                    <a href="#" class="btn btn-danger">Check Date</a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Advert Free Clock</h3>
+                    <p>Experience uninterrupted, ad-free timekeeping and world clock services for absolutely Free of
+                        Cost.</p>
+                    <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Rate Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rate Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i id="star1" onclick="RateStar1()" class="bi bi-star rateUsStar"></i>
+                    <i id="star2" onclick="RateStar2()" class="bi bi-star rateUsStar"></i>
+                    <i id="star3" onclick="RateStar3()" class="bi bi-star rateUsStar"></i>
+                    <i id="star4" onclick="RateStar4()" class="bi bi-star rateUsStar"></i>
+                    <i id="star5" onclick="RateStar5()" class="bi bi-star rateUsStar"></i>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footerContainer">
