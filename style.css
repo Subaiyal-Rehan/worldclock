@@ -20,6 +20,20 @@ body {
     text-align: end;
 }
 
+.rateUsStar {
+    cursor: pointer;
+}
+
+#Submit {
+    background-color: #1c754d;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#Submit:hover {
+    background-color: #115d3b;
+}
+
 .navbar-expand-lg {
     width: 100%;
 }
