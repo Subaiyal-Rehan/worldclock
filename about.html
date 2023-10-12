@@ -31,7 +31,7 @@
                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-                            <li><a class="nav-link" href="#">Contact Us</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">Dropdown</a>
@@ -46,10 +46,6 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </nav>
@@ -85,11 +81,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
+                    <i id="star1" onclick="RateStar1()" class="bi bi-star rateUsStar"></i>
+                    <i id="star2" onclick="RateStar2()" class="bi bi-star rateUsStar"></i>
+                    <i id="star3" onclick="RateStar3()" class="bi bi-star rateUsStar"></i>
+                    <i id="star4" onclick="RateStar4()" class="bi bi-star rateUsStar"></i>
+                    <i id="star5" onclick="RateStar5()" class="bi bi-star rateUsStar"></i>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
@@ -105,10 +101,11 @@
             </div>
             <div id="AboutFirst" class="AboutFirst col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">About Us</h1>
-                <p class="lead">We're more than just time; we're the link connecting you to cities and cultures worldwide. Join us on a journey where moments matter, and explore the diverse rhythms of our planet through the lens of time.</p>
+                <p class="lead">We're more than just time; we're the link connecting you to cities and cultures
+                    worldwide. Join us on a journey where moments matter, and explore the diverse rhythms of our planet
+                    through the lens of time.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start my-4">
-                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Button 1</button>
-                    <button type="button" class="btn btn-outline-success btn-lg px-4">Button 2</button>
+                    <a href="contact.html"><button type="button" class="btn btn-success btn-lg px-4 me-md-2">Contact Us</button></a>
                 </div>
             </div>
         </div>
@@ -121,10 +118,11 @@
             </div>
             <div class="AboutFirst AboutSecond col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Discover The World Clock</h1>
-                <p class="lead">Discover our 'World Clock' - your passport to a world of time. We're here to bridge the gaps, erase the miles, and bring the world's rhythms to your fingertips.</p>
+                <p class="lead">Discover our 'World Clock' - your passport to a world of time. We're here to bridge the
+                    gaps, erase the miles, and bring the world's rhythms to your fingertips.</p>
                 <div class="AboutSecond d-grid gap-2 d-md-flex justify-content-md-start my-4">
-                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Button 1</button>
-                    <button type="button" class="btn btn-outline-success btn-lg px-4">Button 2</button>
+                    
+                    <a href="index.html"><button type="button" class="btn btn-success btn-lg px-4 me-md-2">Check Time</button></a>
                 </div>
             </div>
         </div>
