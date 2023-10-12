@@ -1,3 +1,4 @@
+// Browse More Function
 function clicked() {
     myLoading = () => {
         document.getElementById('loading').style.display = "none";
@@ -6,6 +7,67 @@ function clicked() {
         document.getElementById('cardBody').style.padding = "0 25px";
     }
     setTimeout(myLoading, 1000);
+}
+
+// Rate Us Function
+function RateStar1() {
+    if (document.getElementById('star1').classList.contains("bi-star")) {
+        document.getElementById('star1').classList.remove("bi-star");
+        document.getElementById('star1').classList.add("bi-star-fill");
+    }
+
+    else {
+        document.getElementById('star1').classList.add("bi-star");
+        document.getElementById('star1').classList.remove("bi-star-fill");
+    }
+}
+
+function RateStar2() {
+    if (document.getElementById('star2').classList.contains("bi-star")) {
+        document.getElementById('star2').classList.remove("bi-star");
+        document.getElementById('star2').classList.add("bi-star-fill");
+    }
+
+    else {
+        document.getElementById('star2').classList.add("bi-star");
+        document.getElementById('star2').classList.remove("bi-star-fill");
+    }
+}
+
+function RateStar3() {
+    if (document.getElementById('star3').classList.contains("bi-star")) {
+        document.getElementById('star3').classList.remove("bi-star");
+        document.getElementById('star3').classList.add("bi-star-fill");
+    }
+
+    else {
+        document.getElementById('star3').classList.add("bi-star");
+        document.getElementById('star3').classList.remove("bi-star-fill");
+    }
+}
+
+function RateStar4() {
+    if (document.getElementById('star4').classList.contains("bi-star")) {
+        document.getElementById('star4').classList.remove("bi-star");
+        document.getElementById('star4').classList.add("bi-star-fill");
+    }
+
+    else {
+        document.getElementById('star4').classList.add("bi-star");
+        document.getElementById('star4').classList.remove("bi-star-fill");
+    }
+}
+
+function RateStar5() {
+    if (document.getElementById('star5').classList.contains("bi-star")) {
+        document.getElementById('star5').classList.remove("bi-star");
+        document.getElementById('star5').classList.add("bi-star-fill");
+    }
+
+    else {
+        document.getElementById('star5').classList.add("bi-star");
+        document.getElementById('star5').classList.remove("bi-star-fill");
+    }
 }
 
 
